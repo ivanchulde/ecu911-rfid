@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Chulde"/>
+    <meta name="description" content="ECU 911 Ambato Vehicle Application Access Control" />
+    <title>ECU 911 - Access Control</title>
+    <link rel="stylesheet" href="src/style.css">
+    
+</head>
+<body>
+  <header>
+      <img src="src/images/ecu911_logo.webp" alt="ECU911 Logo">
+      <span>ECU 911 - Access Control</span>
+      <button class="logout-btn">Log out</button>
+      <ul class="navigation">
+          <li class="current"><a href="./index.html" id="home">Home</a></li>
+          <li><a href="./history.html" id="history">View History</a></li>
+      </ul>
+  </header>
+
+  <main>
+      <!-- Tarjeta principal -->
+      <div class="main-card">
+          <h1>Registrar Acceso</h1>
+          <form id="rfidForm">
+              <input type="text" id="rfidInput" placeholder="Ingrese RFID" />
+              <button type="button" id="scanBtn">Registrar</button>
+          </form>
+      </div>
+
+      <div id="userInfoPanel"></div>
+
+      
+  </main>
+
+  <footer class="modern-footer">
+      <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> Ivan Chulde | Ambato-Ecuador.</p>
+          <p>Last Modified in: <span id="lastModified"></span></p>
+      </div>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+
+</body>
+</html>
